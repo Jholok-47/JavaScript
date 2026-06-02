@@ -18,5 +18,17 @@ for(num of numbers) {
 }
 
 let average = sum / numbers.length;
-console.log("Numbers: ", numbers);
-console.log("Average of numbers: ", average);
+console.log(`Numbers: ${numbers}`);
+console.log(`Average of numbers: ${average}`);
+
+// Apply 10% discount to each price in the array and print the discounted prices
+
+let arr = [250, 645, 300, 900, 50];
+console.log(`Prices without discount applied: ${arr}`);
+
+for(let i = 0; i < arr.length; i++) {
+    discount = arr[i]/10;
+    arr[i] = arr[i] - discount;
+}
+
+console.log(`Discounted prices: ${arr}`);
